@@ -22,10 +22,10 @@
 
 ## 更新
 
-从 0.6.0 起,vibTTY 会自动检查更新。有新版本时会弹窗提示,按提示就能下载、安装并重启,不用再手动下载 DMG。
+从 0.6.0 起,vibTTY 会自动检查更新,不用再手动下载 DMG。从 0.8.1 起,发现新版本时不弹窗打断你:侧栏底部会出现「有新版本」,点开能看到这次的更新内容,一键下载、安装并重启。
 
 - 手动检查:菜单栏「vibTTY › 检查更新…」
-- 关闭自动检查:「设置 › 关于 › 更新」
+- 关闭自动检查、打开自动下载:「设置 › 关于 › 更新」
 - 0.5.0 及更早的版本还没有自动更新,需要手动下载安装一次。
 
 每个更新包除了经过 Apple 公证,还带 vibTTY 自己的更新签名,校验不通过就不会安装。
@@ -41,4 +41,4 @@ This repository only hosts installers and the update feed; there is no source co
 - **Install**: download the `.dmg` from the [latest release](https://github.com/his1devil/vibTTY-releases/releases/latest), open it and drag vibTTY into Applications. It is signed with a Developer ID and notarized by Apple.
 - **Requirements**: macOS 13 or later on Apple Silicon. Intel Macs are not supported.
 - **Agent status**: on first launch vibTTY offers to install its status hooks for the agents it finds. Newer Codex versions ask you to review external hooks; choose "Trust all and continue".
-- **Updates**: from 0.6.0 on, vibTTY checks for updates itself (vibTTY › Check for Updates…). Every update is notarized and EdDSA-signed, and vibTTY won't install one that fails verification.
+- **Updates**: from 0.6.0 on, vibTTY checks for updates itself (vibTTY › Check for Updates…); from 0.8.1 a new version shows up in the sidebar instead of a pop-up. Every update is notarized and EdDSA-signed, and vibTTY won't install one that fails verification.
